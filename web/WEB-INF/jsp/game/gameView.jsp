@@ -18,17 +18,17 @@
                 ${status.index == game.bomb ? "bomb" : "ok"}
             </c:if>
             <c:if test="${!link && !game.finished}">
-                <a href="/BeerSelection/game/${status.index}">visit</a>
+                <a href="/MasterApp/game/${status.index}">visit</a>
             </c:if>
             <c:if test="${!link && game.finished}">visit</c:if>
             <br />
         </c:forEach>
         <p>
             <c:if test="${game.finished && game.won}">
-                You WON! <a href="/BeerSelection/game">Restart</a>
+                You WON! <a href="/MasterApp/game">Restart</a>
             </c:if>
             <c:if test="${game.finished && !game.won}">
-                You LOST! <a href="/BeerSelection/game">Restart</a>
+                You LOST! <a href="/MasterApp/game">Restart</a>
             </c:if>
         </p>
     </body>
