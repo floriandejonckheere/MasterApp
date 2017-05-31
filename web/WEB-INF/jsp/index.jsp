@@ -8,7 +8,8 @@
     <body>
         <h1>Hello World!</h1>
         
-        <a href="beer">Beer selection</a>
-        <a href="newsletter">Newsletter</a>
+        <a href="beer">Beer selection</a> <br/>
+        <a href="newsletter">Newsletter</a> <br/>
+        <a href="game">Game</a> <br/>
     </body>
 </html>

@@ -3,6 +3,7 @@ package config;
 import domain.beer.BeerExpertBean;
 import domain.beer.ColorBean;
 import domain.beer.ExpertBean;
+import domain.game.GameService;
 import domain.newsletter.FrameworkBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -38,7 +39,14 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public FrameworkBean getFrameworkBean() {
         return new FrameworkBean();
     }
-
+    
+    /**
+     * Game
+     */
+    @Bean
+    public GameService GameService() {
+        return new GameService();
+    }
     
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
