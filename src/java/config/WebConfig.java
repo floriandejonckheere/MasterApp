@@ -1,5 +1,8 @@
 package config;
 
+import domain.BeerExpertBean;
+import domain.ColorBean;
+import domain.ExpertBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +17,16 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan("controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
+    @Bean
+    public ColorBean colorBean() {
+        return new ColorBean();
+    }
+    
+    @Bean
+    public ExpertBean getBeerExpertBean() {
+        return new BeerExpertBean();
+    }
+    
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/css/**").addResourceLocations("resources/css/");
