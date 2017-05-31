@@ -3,11 +3,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Index</title>
     </head>
     <body>
         <h1>Hello World!</h1>
         
         <a href="beer">Beer selection</a>
+        <a href="newsletter">Newsletter</a>
     </body>
 </html>
