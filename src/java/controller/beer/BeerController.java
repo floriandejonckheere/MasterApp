@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package controller.beer;
 
-import domain.Beer;
-import domain.ColorBean;
-import domain.ExpertBean;
+import domain.beer.Beer;
+import domain.beer.ColorBean;
+import domain.beer.ExpertBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,12 +34,12 @@ public class BeerController {
     public String showForm(Model model) {
         model.addAttribute("beer", new Beer());
         model.addAttribute("colors", colorBean.getColorsList());
-        return "formView";
+        return "beer/formView";
     }
     
     @RequestMapping(method = RequestMethod.POST)
     public String showResult(@ModelAttribute("beer") Beer beer, BindingResult result, Model model) {
         model.addAttribute("suggestions", beerExpertBean.getExpert(beer.getColor()));
-        return "formResult";
+        return "beer/formResult";
     }
 }

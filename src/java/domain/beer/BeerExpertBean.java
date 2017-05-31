@@ -1,4 +1,4 @@
-package domain;
+package domain.beer;
 
 import java.util.ArrayList;
 

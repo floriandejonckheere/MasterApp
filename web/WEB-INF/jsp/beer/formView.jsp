@@ -8,7 +8,7 @@
         <title>Beer Selection</title>
     </head>
     <body>
-        <form:form method="POST" action="beer.htm" modelAttribute="beer">
+        <form:form method="POST" action="beer" modelAttribute="beer">
             <label>Color:</label>
             <form:select path="color">
                 <form:options items="${colors}" />

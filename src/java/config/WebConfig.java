@@ -1,8 +1,8 @@
 package config;
 
-import domain.BeerExpertBean;
-import domain.ColorBean;
-import domain.ExpertBean;
+import domain.beer.BeerExpertBean;
+import domain.beer.ColorBean;
+import domain.beer.ExpertBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
