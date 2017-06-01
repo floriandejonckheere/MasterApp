@@ -12,5 +12,6 @@
         <a href="newsletter">Newsletter</a> <br/>
         <a href="game">Game</a> <br/>
         <a href="inventory">Inventory</a> <br/>
+        <a href="contacts">Contacts</a> <br/>
     </body>
 </html>
