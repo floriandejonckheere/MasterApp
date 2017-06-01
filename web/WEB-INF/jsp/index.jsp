@@ -11,5 +11,6 @@
         <a href="beer">Beer selection</a> <br/>
         <a href="newsletter">Newsletter</a> <br/>
         <a href="game">Game</a> <br/>
+        <a href="inventory">Inventory</a> <br/>
     </body>
 </html>
