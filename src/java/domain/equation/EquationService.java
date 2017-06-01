@@ -11,7 +11,7 @@ package domain.equation;
  */
 public class EquationService {
 
-    private static java.util.List<java.lang.Integer> generateEquation(java.lang.String operation, int difficulty) {
+    public static java.util.List<java.lang.Integer> generateEquation(java.lang.String operation, int difficulty) {
         client.EquationGenerator_Service service = new client.EquationGenerator_Service();
         client.EquationGenerator port = service.getEquationGeneratorPort();
         return port.generateEquation(operation, difficulty);

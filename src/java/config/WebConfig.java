@@ -11,10 +11,7 @@ import domain.inventory.ProductManager;
 import domain.inventory.SimpleProductManager;
 import domain.newsletter.FrameworkBean;
 import java.sql.Date;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.GregorianCalendar;
-import java.util.List;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -25,6 +22,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import validator.EquationValidator;
 
 @Configuration
 @EnableWebMvc
@@ -86,6 +84,14 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return contactService;
     }
 
+    /**
+     * Equation
+     */
+    @Bean
+    public EquationValidator equationValidator() {
+        return new EquationValidator();
+    }
+    
     /**
      * Handlers
      */
